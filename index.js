@@ -1,6 +1,15 @@
 const YoutubeDL = require('youtube-dl');
 const ytdl = require('ytdl-core');
 
+const Discord = require('discord.js')
+const bot = new Discord.Client()
+
+bot.on('ready', function () {
+  console.log("Je suis connecté !")
+})
+
+bot.login('BOT_TOKEN')
+
 /**
  * Takes a discord.js client and turns it into a music bot.
  * Thanks to 'derekmartinez18' for helping.
